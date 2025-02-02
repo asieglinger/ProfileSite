@@ -1,0 +1,131 @@
+/* Base styles */
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@200;400;500&display=swap");
+
+body {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Typography */
+h1,
+h2 {
+  margin-bottom: 20px;
+  font-weight: 200; /* Ultra light weight like in the image */
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #ffffff;
+}
+
+p {
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1em;
+}
+
+/* Navigation */
+.navigation {
+  margin-top: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  font-size: 0.95em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sections */
+.info,
+.resume,
+.projects {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Modern tech elements */
+.tech-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Email link style */
+a[href^="mailto"] {
+  color: #00ff00;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+a[href^="mailto"]:hover {
+  opacity: 0.8;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .button {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
